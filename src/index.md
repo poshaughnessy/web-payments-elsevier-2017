@@ -648,13 +648,13 @@ let method = [{
 
 <div class="credit">[Hawken King](https://www.flickr.com/photos/hawken/332539130)</div>
 
---
+-- these-slides
 
 These slides are at
 
-### [bit.ly/webpayments-elsevier-17](https://bit.ly/webpayments-elsevier-17)
+### [bit.ly/webpay-elsevier](http://bit.ly/webpay-elsevier)
 
-See [medium.com/samsung-internet-dev](https://medium.com/samsung-internet-dev) for a Samsung Pay guide about to be posted today!
+##### See [medium.com/samsung-internet-dev](https://medium.com/samsung-internet-dev) for a Samsung Pay guide about to be posted today!
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
@@ -671,7 +671,7 @@ See [medium.com/samsung-internet-dev](https://medium.com/samsung-internet-dev) f
 
 -- thanks bg-mariohooray
 
-### Thanks! Questions?
+## Thanks! Questions?
 
 ![Spinning coin](images/game-art/goldcoin/coin-spin.gif)
 
