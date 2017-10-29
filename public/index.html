@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#987fff">
-  <title>Web Payments - London JS, Sep 2017</title>
+  <title>Web Payments - Elsevier, Sep 2017</title>
   <style type="text/css">
     /*
  * Originally based on github.com/sjaakvandenberg/cleaver-dark
@@ -573,6 +573,10 @@ pre .xml .cdata {
   max-height: calc(100vh - 10em);
 }
 
+.token-method img {
+  max-height: 50vh;
+}
+
 .slide .pun {
   color: #c4c3f5;
   font-size: 1em;
@@ -870,12 +874,17 @@ h2 + .quote {
 
 .browser-support .container {
   margin: 2em 0;
+  margin: 0 auto;
 }
 
 .browser-support .container div {
   box-sizing: border-box;
   float: left;
   padding: 1em;
+}
+
+.two-images .container div {
+  max-width: 33%;
 }
 
 .three-images .container div {
@@ -940,16 +949,16 @@ h2 + .quote {
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@poshaughnessy">
-  <meta name="twitter:title" content="Web Payments - London JS, Sep 2017">
+  <meta name="twitter:title" content="Web Payments - Elsevier, Sep 2017">
   <meta name="twitter:description" content="Introducing new browser APIs for easier online purchases">
   <meta name="twitter:creator" content="@poshaughnessy">
-  <meta name="twitter:image" content="https://poshaughnessy.github.io/web-payments-londonjs-2017/images/preview.jpg">
+  <meta name="twitter:image" content="https://poshaughnessy.github.io/web-payments-elsevier-2017/images/preview.jpg">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Web Payments - London JS, Sep 2017" />
+  <meta property="og:title" content="Web Payments - Elsevier, Sep 2017" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://poshaughnessy.github.io/web-payments-londonjs-2017/" />
-  <meta property="og:image" content="https://poshaughnessy.github.io/web-payments-londonjs-2017/images/preview.jpg" />
+  <meta property="og:url" content="https://poshaughnessy.github.io/web-payments-elsevier-2017/" />
+  <meta property="og:image" content="https://poshaughnessy.github.io/web-payments-elsevier-2017/images/preview.jpg" />
   <meta property="og:description" content="Introducing new browser APIs for easier online purchases" />
 </head>
 <body>
@@ -963,7 +972,6 @@ h2 + .quote {
 <h3 id="introducing-new-browser-apis-for-easier-online-purchases">Introducing new browser APIs for easier online purchases</h3>
 <div class="contact">
   <p class="social"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a>, <a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>
-  <p class="social">Feat. <a href="https://twitter.com/zfdesign">@zfdesign</a>, <a href="https://twitter.com/justeat_tech">@justeat_tech</a></p>
 </div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
@@ -1010,7 +1018,7 @@ h2 + .quote {
   </div>
   <div class="slide hidden  bg-marioblock bg-fade what-if" id="slide-8">
     <section class="slide-content"><h3 id="what-if-">What if...</h3>
-<p><img src="images/fingerprint-s8.png" alt="Fingerprint scan"></p>
+<p><img src="images/fingerprint-s8.png" alt="Fingerprint scan"> <img src="images/iris-scan-peter.png" alt="Iris scan"></p>
 <div class="caption">You could simply confirm payment with your fingerprint or iris scan?</div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/grunge/2829427342">Leandro Amato</a></div></section>
@@ -1188,9 +1196,9 @@ h2 + .quote {
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  browser-support three-images" id="slide-27">
-    <section class="slide-content"><h4 id="also-in-the-working-group-">Also in the Working Group...</h4>
-<div class="container">
+  <div class="slide hidden  browser-support two-images" id="slide-27">
+    <section class="slide-content"><h4 id="and-in-development-">And in development...</h4>
+<div class="container flex">
   <div>
     <img src="images/firefox.png" alt="Firefox">
     <p>Mozilla</p>
@@ -1199,13 +1207,7 @@ h2 + .quote {
     <img src="images/safari.png" alt="Safari">
     <p>Apple</p>
   </div>
-  <div>
-    <img src="images/facebook.png" alt="Facebook">
-    <p>Facebook</p>
-  </div>
 </div>
-
-<div class="caption"><a href="https://www.w3.org/2004/01/pp-impl/83744/status">And many more</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
@@ -1296,81 +1298,56 @@ h2 + .quote {
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-38">
-    <section class="slide-content"><p><img src="images/android-pay-logo-white.png" alt="Android Pay"></p>
-<div class="caption"><a href="http://bit.ly/payment-request-android-pay">bit.ly/payment-request-android-pay</a></div>
-
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div>
-
-<!-- -- -->
-<!-- ![Native app integration](images/app-types.png) -->
-<!-- <div class="caption">From [w3.org/TR/payment-handler/](www.w3.org/TR/payment-handler/)</div> -->
-<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
-  </div>
-  <div class="slide hidden" id="slide-39">
-    <section class="slide-content"><p><img src="images/android-pay-flow.png" alt="Android Pay flow"></p>
+  <div class="slide hidden  img-with-header four-images pay-logos" id="slide-38">
+    <section class="slide-content"><h4 id="designed-to-allow-payment-app-integration">Designed to allow payment app integration</h4>
+<p><img src="images/samsung-pay-logo-white.png" alt="Samsung Pay">
+<img src="images/android-pay-logo-white.png" alt="Android Pay">
+<img src="images/apple-pay-logo-white.png" alt="Apple Pay">
+<img src="images/paypal-logo-white.svg" alt="PayPal"></p>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-40">
-    <section class="slide-content"><p><img src="images/android-pay-tokens-explanation.png" alt="Android Pay tokens explanation"> </p>
-<div class="caption"><a href="https://developer.vantiv.com/docs/DOC-1689">developer.vantiv.com/docs/DOC-1689</a></div>
-
-<div class="caption">(&quot;PAN&quot; = Primary Account N​umber, the number embossed on your card)</div>
-
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div>
-
-<!-- -- img-with-header -->
-<!-- #### Gateway Token -->
-<!-- ![Gateway token](images/android-pay-gateway-token.png) -->
-<!-- <div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div> -->
-<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
-<!-- -- img-with-header -->
-<!-- #### Network Token -->
-<!-- ![Network token](images/android-pay-network-token.png) -->
-<!-- <div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div> -->
-<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
+  <div class="slide hidden  img-with-header" id="slide-39">
+    <section class="slide-content"><p><img src="images/samsung-pay-logo-white.png" alt="Samsung Pay"></p>
+</section>
   </div>
-  <div class="slide hidden  more-code" id="slide-41">
-    <section class="slide-content"><pre><code class="lang-javascript">supportedMethods: [<span class="hljs-string">'https://android.com/pay'</span>],
-data: {  
-  merchantName: <span class="hljs-string">'Android Pay Demo'</span>,
-  <span class="hljs-comment">// merchant ID obtained from Google that maps to your origin</span>
-  merchantId: <span class="hljs-string">'01234567890123456789'</span>,  
-  environment: <span class="hljs-string">'TEST'</span>,  
-  allowedCardNetworks: [<span class="hljs-string">'AMEX'</span>, <span class="hljs-string">'DISCOVER'</span>, <span class="hljs-string">'MASTERCARD'</span>, <span class="hljs-string">'VISA'</span>],  
-  paymentMethodTokenizationParameters: {  
-    tokenizationType: <span class="hljs-string">'GATEWAY_TOKEN'</span>,  
-    parameters: {  
-      <span class="hljs-string">'gateway'</span>: <span class="hljs-string">'stripe'</span>,  
-      <span class="hljs-string">'stripe:publishableKey'</span>: <span class="hljs-string">'xx_demo_xxxxxxxxxxxxxxxxxxxxxxxx'</span>,  
-      <span class="hljs-string">'stripe:version'</span>: <span class="hljs-string">'2016-07-06'</span>,  
-    }  
-  }  
-}</code></pre>
-<div class="caption">Android Pay calls your processor and returns a token</div>
-
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
+  <div class="slide hidden  token-method" id="slide-40">
+    <section class="slide-content"><h3 id="gateway-token-method">Gateway Token method</h3>
+<p>If using a supporting 3rd party service (e.g. Stripe). Samsung Pay will call your Payment Gateway.</p>
+<p><img src="images/spay-gateway-token.png" alt="Gateway Token method"></p>
+</section>
   </div>
-  <div class="slide hidden" id="slide-42">
-    <section class="slide-content"><pre><code class="lang-javascript">request.show().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) </span>{
-    <span class="hljs-comment">// POST the result to server</span>
-    <span class="hljs-keyword">return</span> fetch(<span class="hljs-string">'/pay'</span>, {
-      method: <span class="hljs-string">'POST'</span>,
-      body: <span class="hljs-built_in">JSON</span>.stringify(result.toJSON()),
-      ...
-    })
-    <span class="hljs-comment">// Then check response status &amp; JSON &amp;</span>
-    <span class="hljs-comment">// call result.complete() with 'success' / 'fail'</span></code></pre>
+  <div class="slide hidden - token-method" id="slide-41">
+    <section class="slide-content"><h3 id="-or-network-token-method">...or Network Token method</h3>
+<p>If you want to handle payment token yourself or use your own Payment Gateway to handle payment token.</p>
+<p><img src="images/spay-network-token.png" alt="Network Token method"></p>
+</section>
+  </div>
+  <div class="slide hidden  more-code" id="slide-42">
+    <section class="slide-content"><pre><code class="lang-javascript">supportedMethods: [<span class="hljs-string">'https://spay.samsung.com'</span>],
+data: {
+  <span class="hljs-string">'version'</span>: <span class="hljs-string">'1'</span>,
+  <span class="hljs-string">'productId'</span>: <span class="hljs-string">'[Obtain from Partner Portal]'</span>,
+  <span class="hljs-string">'allowedCardNetworks'</span>: [<span class="hljs-string">'AMEX'</span>, <span class="hljs-string">'DISCOVER'</span>, <span class="hljs-string">'MASTERCARD'</span>, <span class="hljs-string">'VISA'</span>],
+  <span class="hljs-string">'orderNumber'</span>: <span class="hljs-string">'1234567'</span>,
+  <span class="hljs-string">'merchantName'</span>: <span class="hljs-string">'Elsevier Demo'</span>,
+  <span class="hljs-string">'Debug'</span>: {
+    <span class="hljs-string">'APIKey'</span>: <span class="hljs-string">'[Obtain from Partner Portal]'</span>
+  }
+};</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden  img-with-header" id="slide-43">
+    <section class="slide-content"><p><img src="images/android-pay-logo-white.png" alt="Android Pay"></p>
+<div class="caption"><a href="http://bit.ly/payment-request-android-pay">bit.ly/payment-request-android-pay</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header" id="slide-44">
     <section class="slide-content"><h4 id="apple-pay-wrapper">Apple Pay Wrapper</h4>
 <p><img src="images/apple-pay-wrapper.png" alt="Apple Pay wrapper demo"></p>
 <div class="caption"><a href="https://github.com/GoogleChrome/appr-wrapper">github.com/GoogleChrome/appr-wrapper</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-44">
+  <div class="slide hidden" id="slide-45">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> method = [{
   supportedMethods: [<span class="hljs-string">'https://apple.com/apple-pay'</span>],
   data: {
@@ -1386,16 +1363,9 @@ data: {
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  gold-coins bg-mariocartridges bg-fade" id="slide-45">
+  <div class="slide hidden  gold-coins bg-mariocartridges bg-fade" id="slide-46">
     <section class="slide-content"><h2 id="let-s-see-some-real-examples">Let&#39;s see some real examples</h2>
 <div class="credit"><a href="https://www.flickr.com/photos/rapapu/4862441304">Humberto Rodriguez</a></div></section>
-  </div>
-  <div class="slide hidden  img-with-header just-eat" id="slide-46">
-    <section class="slide-content"><p><img src="images/just-eat.svg" alt="Just Eat"></p>
-<p><img src="images/game-art/goldcoin/coin-spin.gif" style="width: 2em" alt="Spinning coin"/></p>
-<div class="caption">Demo from <a href="https://twitter.com/zfdesign">Zlatin Ivanov</a></div>
-
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden" id="slide-47">
     <section class="slide-content"><video controls>
@@ -1403,7 +1373,7 @@ data: {
   <source src="videos/just-eat-demo.webm"/>
 </video>
 
-<div class="caption">Just Eat&#39;s prototype Payment Request integration demo&#39;d by <a href="https://twitter.com/zfdesign">Zlatin Ivanov</a></div>
+<div class="caption">Just Eat prototype demo&#39;d by <a href="https://twitter.com/zfdesign">Zlatin Ivanov</a> at <a href="https://www.meetup.com/London-JavaScript-Community/events/242200101/">London JS</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
@@ -1436,12 +1406,7 @@ data: {
     <section class="slide-content"><h2 id="what-s-next-">What&#39;s next?</h2>
 <div class="credit"><a href="https://www.flickr.com/photos/grunge/2829427342">Leandro Amato</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header mobile-app-integrations" id="slide-54">
-    <section class="slide-content"><h3 id="more-payment-apps">More payment apps</h3>
-<p><img src="images/samsung-pay.png" alt="Samsung Pay"></p>
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
-  </div>
-  <div class="slide hidden  img-with-header payment-handler-api" id="slide-55">
+  <div class="slide hidden  img-with-header payment-handler-api" id="slide-54">
     <section class="slide-content"><h3 id="payment-handler-api">Payment Handler API</h3>
 <p><img src="images/payment-handler-api.png" alt="Payment Handler API"></p>
 <div class="caption"><a href="http://bit.ly/payment-handler-api">bit.ly/payment-handler-api</a></div>
@@ -1456,46 +1421,30 @@ data: {
 <!-- * Web Payments HTTP API 1.0 -->
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
   </div>
-  <div class="slide hidden  more-code" id="slide-56">
-    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// With your service worker registration</span>
-<span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.all([
-  registration.paymentManager.instruments.set(
-    <span class="hljs-string">"dc2de27a-ca5e-4fbd-883e-b6ded6c69d4f"</span>,
-    {
-      name: <span class="hljs-string">"Visa ending ****4756"</span>,
-      enabledMethods: [<span class="hljs-string">"basic-card"</span>]
-    }),
-
-  registration.paymentManager.instruments.set(
-    <span class="hljs-string">"c8126178-3bba-4d09-8f00-0771bcfd3b11"</span>,
-    {
-      name: <span class="hljs-string">"My Bob Pay Account: john@example.com"</span>,
-      enabledMethods: [<span class="hljs-string">"https://bobpay.com/"</span>]
-    })
-]);</code></pre>
-<div class="caption"><a href="https://w3c.github.io/payment-handler/#register-example">w3c.github.io/payment-handler/#register-example</a></div></section>
-  </div>
-  <div class="slide hidden  img-with-header" id="slide-57">
-    <section class="slide-content"><p><img src="images/payment-handler-chrome.jpg" alt="Payment Handler flag in Chrome"></p>
-<div class="caption"><a href="https://lists.w3.org/Archives/Public/public-payments-wg/2017Jun/0006.html">Currently behind flags in Chrome for Android</a></div></section>
-  </div>
-  <div class="slide hidden  img-with-header" id="slide-58">
+  <div class="slide hidden  img-with-header" id="slide-55">
     <section class="slide-content"><h3 id="cryptocurrencies-">Cryptocurrencies?</h3>
 <p><img src="images/bitcoin-brave.png" alt="Bitcoin funds for Brave"></p>
 <div class="credit"><a href="https://www.brave.com/">brave.com</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-59">
+  <div class="slide hidden  img-with-header" id="slide-56">
     <section class="slide-content"><p><a href="https://twitter.com/BrendanEich/status/907625611652325376"><img src="images/brendan-eich-tweet.png" alt="Brendan Eich tweet"></a></p>
 <div class="caption">BAT = Basic Attention Token - <a href="https://basicattentiontoken.org/">basicattentiontoken.org</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header medium-clap" id="slide-60">
+  <div class="slide hidden  img-with-header medium-clap" id="slide-57">
     <section class="slide-content"><h4 id="beyond-the-ad-driven-web">Beyond the ad-driven Web</h4>
 <p><img src="images/mediumclap60fps.gif" alt="Medium clap"></p>
 <div class="caption"><a href="https://twitter.com/poshaughnessy/status/898061485645103105">Medium&#39;s new clap feature. Imagine something similar for throwing a few pennies!</a></div> 
 
 <div class="credit"><a href="https://dribbble.com/lemurf">Liam Murphy</a></div></section>
   </div>
-  <div class="slide hidden  bg-mariotoys and-more" id="slide-61">
+  <div class="slide hidden  img-with-header-and-caption" id="slide-58">
+    <section class="slide-content"><h3 id="web-auth">Web Auth</h3>
+<p><img src="images/web-auth.png" alt="Web Auth spec"></p>
+<div class="caption"><a href="https://w3c.github.io/webauthn/">w3c.github.io/webauthn/</a></div>
+
+<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
+  </div>
+  <div class="slide hidden  bg-mariotoys and-more" id="slide-59">
     <section class="slide-content"><h3 id="gift-cards-coupons-">Gift cards / coupons?</h3>
 <h3 id="tokenisation-standardisation-">Tokenisation standardisation?</h3>
 <h2 id="and-more-">And more!</h2>
@@ -1503,17 +1452,14 @@ data: {
 
 <div class="credit"><a href="https://www.flickr.com/photos/hawken/332539130">Hawken King</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header-and-caption" id="slide-62">
-    <section class="slide-content"><h3 id="web-auth">Web Auth</h3>
-<p><img src="images/web-auth.png" alt="Web Auth spec"></p>
-<div class="caption"><a href="https://w3c.github.io/webauthn/">w3c.github.io/webauthn/</a></div>
-
+  <div class="slide hidden" id="slide-60">
+    <section class="slide-content"><p>These slides are at</p>
+<h3 id="-bit-ly-webpayments-elsevier-17-https-bit-ly-webpayments-elsevier-17-"><a href="https://bit.ly/webpayments-elsevier-17">bit.ly/webpayments-elsevier-17</a></h3>
+<p>See <a href="https://medium.com/samsung-internet-dev">medium.com/samsung-internet-dev</a> for a Samsung Pay guide about to be posted today!</p>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  further-resources" id="slide-63">
-    <section class="slide-content"><p>These slides are at</p>
-<h3 id="-bit-ly-webpayments-londonjs-17-https-bit-ly-webpayments-londonjs-17-"><a href="https://bit.ly/webpayments-londonjs-17">bit.ly/webpayments-londonjs-17</a></h3>
-<p>Further resources</p>
+  <div class="slide hidden  further-resources" id="slide-61">
+    <section class="slide-content"><h3 id="further-resources">Further Resources</h3>
 <ul>
 <li><a href="https://github.com/w3c/webpayments/wiki">github.com/w3c/webpayments/wiki</a></li>
 <li><a href="https://github.com/w3c/payment-request-info">github.com/w3c/payment-request-info</a></li>
@@ -1522,17 +1468,15 @@ data: {
 <li><a href="https://github.com/SamsungInternet/examples/tree/master/socks-megastore">github.com/SamsungInternet/examples/tree/master/socks-megastore</a></li>
 <li><a href="https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/">developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/</a></li>
 </ul>
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
+</section>
   </div>
-  <div class="slide hidden  thanks bg-mariohooray" id="slide-64">
-    <section class="slide-content"><h3 id="thanks-questions-comments-">Thanks! Questions? Comments?</h3>
+  <div class="slide hidden  thanks bg-mariohooray" id="slide-62">
+    <section class="slide-content"><h3 id="thanks-questions-">Thanks! Questions?</h3>
 <p><img src="images/game-art/goldcoin/coin-spin.gif" alt="Spinning coin"></p>
 <div class="contact">
-  <p class="social"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a>, <a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>
-  <p class="social">Feat. <a href="https://twitter.com/zfdesign">@zfdesign</a>, <a href="https://twitter.com/justeat_tech">@justeat_tech</a></p>
+  <p class="social"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
+  <p class="social"><a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>
 </div>
-
-<p style="font-size: 0.9em;">Please leave us feedback on Meetup</p>
 
 <div class="credit"><a href="https://www.flickr.com/photos/redisdead/2165783016">Laurence Vagner</a></div></section>
   </div>

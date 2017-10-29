@@ -75,7 +75,7 @@ controls: true
 
 ### What if...
 
-![Fingerprint scan](images/fingerprint-s8.png)
+![Fingerprint scan](images/fingerprint-s8.png) ![Iris scan](images/iris-scan-peter.png)
 
 <div class="caption">You could simply confirm payment with your fingerprint or iris scan?</div>
 
@@ -304,11 +304,11 @@ new PaymentRequest(methodData, details, options)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- browser-support three-images
+-- browser-support two-images
 
-#### Also in the Working Group...
+#### And in development...
 
-<div class="container">
+<div class="container flex">
   <div>
     ![Firefox](images/firefox.png)
     <p>Mozilla</p>
@@ -317,13 +317,7 @@ new PaymentRequest(methodData, details, options)
     ![Safari](images/safari.png)
     <p>Apple</p>
   </div>
-  <div>
-    ![Facebook](images/facebook.png)
-    <p>Facebook</p>
-  </div>
 </div>
-
-<div class="caption">[And many more](https://www.w3.org/2004/01/pp-impl/83744/status)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
@@ -447,86 +441,60 @@ WePay.wallet.beginTokenization(...);
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
+-- img-with-header four-images pay-logos
+
+#### Designed to allow payment app integration
+
+![Samsung Pay](images/samsung-pay-logo-white.png)
+![Android Pay](images/android-pay-logo-white.png)
+![Apple Pay](images/apple-pay-logo-white.png)
+![PayPal](images/paypal-logo-white.svg)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- img-with-header
+
+![Samsung Pay](images/samsung-pay-logo-white.png)
+
+-- token-method
+
+### Gateway Token method
+
+If using a supporting 3rd party service (e.g. Stripe). Samsung Pay will call your Payment Gateway.
+  
+![Gateway Token method](images/spay-gateway-token.png)
+  
+--- token-method
+
+### ...or Network Token method
+
+If you want to handle payment token yourself or use your own Payment Gateway to handle payment token.
+
+![Network Token method](images/spay-network-token.png)
+
+-- more-code
+
+```javascript
+supportedMethods: ['https://spay.samsung.com'],
+data: {
+  'version': '1',
+  'productId': '[Obtain from Partner Portal]',
+  'allowedCardNetworks': ['AMEX', 'DISCOVER', 'MASTERCARD', 'VISA'],
+  'orderNumber': '1234567',
+  'merchantName': 'Elsevier Demo',
+  'Debug': {
+    'APIKey': '[Obtain from Partner Portal]'
+  }
+};
+```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- img-with-header
 
 ![Android Pay](images/android-pay-logo-white.png)
 
 <div class="caption">[bit.ly/payment-request-android-pay](http://bit.ly/payment-request-android-pay)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
-<!-- -- -->
-<!-- ![Native app integration](images/app-types.png) -->
-<!-- <div class="caption">From [w3.org/TR/payment-handler/](www.w3.org/TR/payment-handler/)</div> -->
-<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
-
---
-
-![Android Pay flow](images/android-pay-flow.png)
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
--- img-with-header
-
-![Android Pay tokens explanation](images/android-pay-tokens-explanation.png) 
-
-<div class="caption">[developer.vantiv.com/docs/DOC-1689](https://developer.vantiv.com/docs/DOC-1689)</div>
-
-<div class="caption">("PAN" = Primary Account N​umber, the number embossed on your card)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
-<!-- -- img-with-header -->
-<!-- #### Gateway Token -->
-<!-- ![Gateway token](images/android-pay-gateway-token.png) -->
-<!-- <div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div> -->
-<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
-<!-- -- img-with-header -->
-<!-- #### Network Token -->
-<!-- ![Network token](images/android-pay-network-token.png) -->
-<!-- <div class="caption">[developers.google.com/android-pay/mobile-web/tutorial](https://developers.google.com/android-pay/mobile-web/tutorial)</div> -->
-<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
-
--- more-code
-
-```javascript 
-supportedMethods: ['https://android.com/pay'],
-data: {  
-  merchantName: 'Android Pay Demo',
-  // merchant ID obtained from Google that maps to your origin
-  merchantId: '01234567890123456789',  
-  environment: 'TEST',  
-  allowedCardNetworks: ['AMEX', 'DISCOVER', 'MASTERCARD', 'VISA'],  
-  paymentMethodTokenizationParameters: {  
-    tokenizationType: 'GATEWAY_TOKEN',  
-    parameters: {  
-      'gateway': 'stripe',  
-      'stripe:publishableKey': 'xx_demo_xxxxxxxxxxxxxxxxxxxxxxxx',  
-      'stripe:version': '2016-07-06',  
-    }  
-  }  
-}
-```
-
-<div class="caption">Android Pay calls your processor and returns a token</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
---
-
-```javascript
-request.show().then(function(result) {
-    // POST the result to server
-    return fetch('/pay', {
-      method: 'POST',
-      body: JSON.stringify(result.toJSON()),
-      ...
-    })
-    // Then check response status & JSON &
-    // call result.complete() with 'success' / 'fail'
-```
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- img-with-header
 
@@ -564,16 +532,6 @@ let method = [{
 
 <div class="credit">[Humberto Rodriguez](https://www.flickr.com/photos/rapapu/4862441304)</div>
 
--- img-with-header just-eat
-
-![Just Eat](images/just-eat.svg)
-
-<img src="images/game-art/goldcoin/coin-spin.gif" style="width: 2em" alt="Spinning coin"/>
-
-<div class="caption">Demo from [Zlatin Ivanov](https://twitter.com/zfdesign)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
 --
 
 <video controls>
@@ -581,7 +539,7 @@ let method = [{
   <source src="videos/just-eat-demo.webm"/>
 </video>
 
-<div class="caption">Just Eat's prototype Payment Request integration demo'd by [Zlatin Ivanov](https://twitter.com/zfdesign)</div>
+<div class="caption">Just Eat prototype demo'd by [Zlatin Ivanov](https://twitter.com/zfdesign) at [London JS](https://www.meetup.com/London-JavaScript-Community/events/242200101/)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
@@ -626,14 +584,6 @@ let method = [{
 
 <div class="credit">[Leandro Amato](https://www.flickr.com/photos/grunge/2829427342)</div>
 
--- img-with-header mobile-app-integrations
-
-### More payment apps
-
-![Samsung Pay](images/samsung-pay.png)
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
 -- img-with-header payment-handler-api
 
 ### Payment Handler API
@@ -651,35 +601,6 @@ let method = [{
 <!-- * Tokenised Card Payment -->
 <!-- * Web Payments HTTP API 1.0 -->
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
-
--- more-code
-
-```javascript
-// With your service worker registration
-return Promise.all([
-  registration.paymentManager.instruments.set(
-    "dc2de27a-ca5e-4fbd-883e-b6ded6c69d4f",
-    {
-      name: "Visa ending ****4756",
-      enabledMethods: ["basic-card"]
-    }),
-
-  registration.paymentManager.instruments.set(
-    "c8126178-3bba-4d09-8f00-0771bcfd3b11",
-    {
-      name: "My Bob Pay Account: john@example.com",
-      enabledMethods: ["https://bobpay.com/"]
-    })
-]);
-```
-
-<div class="caption">[w3c.github.io/payment-handler/#register-example](https://w3c.github.io/payment-handler/#register-example)</div>
-
--- img-with-header
-
-![Payment Handler flag in Chrome](images/payment-handler-chrome.jpg)
-
-<div class="caption">[Currently behind flags in Chrome for Android](https://lists.w3.org/Archives/Public/public-payments-wg/2017Jun/0006.html)</div>
 
 -- img-with-header
 
@@ -705,6 +626,16 @@ return Promise.all([
 
 <div class="credit">[Liam Murphy](https://dribbble.com/lemurf)</div>
 
+-- img-with-header-and-caption
+
+### Web Auth
+
+![Web Auth spec](images/web-auth.png)
+
+<div class="caption">[w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- bg-mariotoys and-more
 
 ### Gift cards / coupons?
@@ -717,23 +648,19 @@ return Promise.all([
 
 <div class="credit">[Hawken King](https://www.flickr.com/photos/hawken/332539130)</div>
 
--- img-with-header-and-caption
+--
 
-### Web Auth
+These slides are at
 
-![Web Auth spec](images/web-auth.png)
+### [bit.ly/webpayments-elsevier-17](https://bit.ly/webpayments-elsevier-17)
 
-<div class="caption">[w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)</div>
+See [medium.com/samsung-internet-dev](https://medium.com/samsung-internet-dev) for a Samsung Pay guide about to be posted today!
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- further-resources
 
-These slides are at
-
-### [bit.ly/webpayments-londonjs-17](https://bit.ly/webpayments-londonjs-17)
-
-Further resources
+### Further Resources
 
 * [github.com/w3c/webpayments/wiki](https://github.com/w3c/webpayments/wiki)
 * [github.com/w3c/payment-request-info](https://github.com/w3c/payment-request-info)
@@ -742,19 +669,15 @@ Further resources
 * [github.com/SamsungInternet/examples/tree/master/socks-megastore](https://github.com/SamsungInternet/examples/tree/master/socks-megastore)
 * [developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
 
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
 -- thanks bg-mariohooray
 
-### Thanks! Questions? Comments?
+### Thanks! Questions?
 
 ![Spinning coin](images/game-art/goldcoin/coin-spin.gif)
 
 <div class="contact">
-  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy), [@samsunginternet](https://twitter.com/samsunginternet)</p>
-  <p class="social">Feat. [@zfdesign](https://twitter.com/zfdesign), [@justeat_tech](https://twitter.com/justeat_tech)</p>
+  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
+  <p class="social">[@samsunginternet](https://twitter.com/samsunginternet)</p>
 </div>
-
-<p style="font-size: 0.9em;">Please leave us feedback on Meetup</p>
 
 <div class="credit">[Laurence Vagner](https://www.flickr.com/photos/redisdead/2165783016)</div>

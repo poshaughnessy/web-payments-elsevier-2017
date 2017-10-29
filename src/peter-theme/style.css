@@ -565,6 +565,10 @@ pre .xml .cdata {
   max-height: calc(100vh - 10em);
 }
 
+.token-method img {
+  max-height: 50vh;
+}
+
 .slide .pun {
   color: #c4c3f5;
   font-size: 1em;
@@ -862,12 +866,17 @@ h2 + .quote {
 
 .browser-support .container {
   margin: 2em 0;
+  margin: 0 auto;
 }
 
 .browser-support .container div {
   box-sizing: border-box;
   float: left;
   padding: 1em;
+}
+
+.two-images .container div {
+  max-width: 33%;
 }
 
 .three-images .container div {
