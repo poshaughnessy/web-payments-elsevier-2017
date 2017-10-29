@@ -671,6 +671,7 @@ These slides are at
 ### Further Resources
 
 * [Samsung Pay SDC 2017 presentation](https://youtu.be/x_k1L4d_oXs?t=9m51s)
+* [glitch.com/~web-payments-101](https://glitch.com/~web-payments-101)
 * [medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f](https://medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
 * [github.com/SamsungInternet/examples/tree/master/socks-megastore](https://github.com/SamsungInternet/examples/tree/master/socks-megastore)
 * [github.com/w3c/webpayments/wiki](https://github.com/w3c/webpayments/wiki)
