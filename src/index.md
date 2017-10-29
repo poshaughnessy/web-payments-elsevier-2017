@@ -18,6 +18,12 @@ controls: true
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
+-- img-with-caption full-logo
+
+![Samsung Internet](images/samsunginternet-logo-full-light.png)
+
+##### ~300m monthly active users, top 3 mobile browser (Europe, US - StatCounter)
+
 -- img-with-caption five-images
 
 ![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png) ![Very long form 5](images/very-long-checkout-form-5.png)
@@ -452,9 +458,11 @@ WePay.wallet.beginTokenization(...);
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- img-with-header
+-- img-with-header samsung-pay-title
 
 ![Samsung Pay](images/samsung-pay-logo-white.png)
+
+<div class="logos">![Samsung Internet](images/sbrowser5.4.png) ![Chrome for Android](images/chrome-android.png)</div>
 
 -- token-method
 
@@ -494,7 +502,7 @@ data: {
 
 ![Android Pay](images/android-pay-logo-white.png)
 
-<div class="caption">[bit.ly/payment-request-android-pay](http://bit.ly/payment-request-android-pay)</div>
+<div class="caption"><p>[bit.ly/payment-request-android-pay](http://bit.ly/payment-request-android-pay)</p><p>[bit.ly/webpay-pay-with-google](https://www.blog.google/topics/shopping-payments/pay-with-google-and-speed-through-checkout/)</p></div>
 
 -- img-with-header
 
@@ -618,7 +626,7 @@ let method = [{
 
 -- img-with-header medium-clap
 
-#### Beyond the ad-driven Web
+#### Beyond the ad-driven Web?
 
 ![Medium clap](images/mediumclap60fps.gif)
 
@@ -662,12 +670,12 @@ These slides are at
 
 ### Further Resources
 
+* [Samsung Pay SDC 2017 presentation](https://youtu.be/x_k1L4d_oXs?t=9m51s)
+* [medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f](https://medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
+* [github.com/SamsungInternet/examples/tree/master/socks-megastore](https://github.com/SamsungInternet/examples/tree/master/socks-megastore)
 * [github.com/w3c/webpayments/wiki](https://github.com/w3c/webpayments/wiki)
 * [github.com/w3c/payment-request-info](https://github.com/w3c/payment-request-info)
 * [github.com/w3c/payment-request-info/wiki/FAQ](https://github.com/w3c/payment-request-info/wiki/FAQ)
-* [medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f](https://medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
-* [github.com/SamsungInternet/examples/tree/master/socks-megastore](https://github.com/SamsungInternet/examples/tree/master/socks-megastore)
-* [developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
 
 -- thanks bg-mariohooray
 
