@@ -5,12 +5,12 @@ theme: peter-theme
 themecolour: 111111
 url: https://poshaughnessy.github.io/web-payments-elsevier-2017/
 image: https://poshaughnessy.github.io/web-payments-elsevier-2017/images/preview.jpg
-controls: true
+controls: false
 --
 
 ![Web](images/game-art/web-goldcoins.svg)
 ![Payments](images/game-art/payments-goldcoins.svg)
-### Introducing new browser APIs for easier online purchases
+### Browser APIs for easier online purchases
 
 <div class="contact">
   <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy), [@samsunginternet](https://twitter.com/samsunginternet)</p>
@@ -22,7 +22,7 @@ controls: true
 
 ![Samsung Internet](images/samsunginternet-logo-full-light.png)
 
-##### ~300m monthly active users, top 3 mobile browser (Europe, US - StatCounter)
+##### Android &middot; Gear VR &middot; DeX
 
 -- img-with-caption five-images
 
@@ -271,11 +271,13 @@ new PaymentRequest(methodData, details, options)
 
 --
 
-## UX
+## UX examples
 
 <button id="express-checkout">Express Checkout</button>
+or
+<button id="express-checkout">Buy Now</button>
 
-<div class="caption">Could be a good way to integrate it, but up to you, test it out!</div>
+<div class="caption">Could be good ways to integrate it, but up to you!</div>
 
 -- gold-coins bg-mariowall bg-fade-less
 
@@ -480,7 +482,7 @@ If you want to handle payment token yourself or use your own Payment Gateway to 
 
 ![Network Token method](images/spay-network-token.png)
 
--- more-code
+--
 
 ```javascript
 supportedMethods: ['https://spay.samsung.com'],
@@ -514,43 +516,11 @@ data: {
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
---
-
-```javascript
-let method = [{
-  supportedMethods: ['https://apple.com/apple-pay'],
-  data: {
-    supportedNetworks: [
-      'amex', 'discover', 'masterCard', 'visa'
-    ],
-    countryCode: 'US',
-    validationEndpoint: '/applepay/validate/',
-    merchantIdentifier: 'merchant.com.agektmr.payment'
-  }
-}];
-```
-
-<div class="caption">[github.com/GoogleChrome/appr-wrapper](https://github.com/GoogleChrome/appr-wrapper)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
 -- gold-coins bg-mariocartridges bg-fade
 
 ## Let's see some real examples
 
 <div class="credit">[Humberto Rodriguez](https://www.flickr.com/photos/rapapu/4862441304)</div>
-
---
-
-<video controls>
-  <source src="videos/just-eat-demo.mp4"/>
-  <source src="videos/just-eat-demo.webm"/>
-</video>
-
-<div class="caption">Just Eat prototype demo'd by [Zlatin Ivanov](https://twitter.com/zfdesign) at [London JS](https://www.meetup.com/London-JavaScript-Community/events/242200101/)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
 
 -- img-with-header
 
@@ -580,11 +550,30 @@ let method = [{
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
+--
+
+![NYT](images/tweet-nyt.png)
+
+--
+
+<video controls>
+  <source src="videos/just-eat-demo.mp4"/>
+  <source src="videos/just-eat-demo.webm"/>
+</video>
+
+<div class="caption">Just Eat prototype demo'd by [Zlatin Ivanov](https://twitter.com/zfdesign) at [London JS](https://www.meetup.com/London-JavaScript-Community/events/242200101/)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- logos
 
 ### Also using Payment Request
 
 ![Washington Post](images/washingtonpost-white.png) ![Groupon](images/groupon-white.png) ![WWF](images/wwf-white-outline.png) ![JD Sports](images/jdsports.png) ![Nivea](images/nivea-white.png)
+
+--
+
+![JCrew](images/tweet-jcrew.png)
 
 -- bg-marioblock bg-fade what-if
 
