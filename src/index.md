@@ -625,9 +625,9 @@ data: {
 
 -- img-with-header-and-caption
 
-### Web Auth
+### WebAuthn
 
-![Web Auth spec](images/web-auth.png)
+![Web Authn spec](images/web-auth.png)
 
 <div class="caption">[w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)</div>
 
