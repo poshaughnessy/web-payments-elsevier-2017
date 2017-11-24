@@ -5,7 +5,7 @@ theme: peter-theme
 themecolour: 111111
 url: https://poshaughnessy.github.io/web-payments-elsevier-2017/
 image: https://poshaughnessy.github.io/web-payments-elsevier-2017/images/preview.jpg
-controls: false
+controls: true
 --
 
 ![Web](images/game-art/web-goldcoins.svg)
